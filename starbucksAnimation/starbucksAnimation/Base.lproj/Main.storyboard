@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="starbucksAnimation" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MSRInfo_Main_Cup_02" translatesAutoresizingMaskIntoConstraints="NO" id="kG6-bt-Hk9">
+                                <rect key="frame" x="126" y="220" width="122" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="122" id="JhH-OO-3HH"/>
+                                    <constraint firstAttribute="height" constant="44" id="Z2p-Bj-5aU"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MSRInfo_Main_Cup_01" translatesAutoresizingMaskIntoConstraints="NO" id="ZCA-y6-Ttk">
+                                <rect key="frame" x="126" y="250.5" width="122" height="166"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="122" id="8mW-7p-3ym"/>
+                                    <constraint firstAttribute="height" constant="166" id="dr6-Ya-Ru6"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ZCA-y6-Ttk" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="8de-hs-ERd"/>
+                            <constraint firstItem="kG6-bt-Hk9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ryk-dN-4Jg"/>
+                            <constraint firstItem="ZCA-y6-Ttk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="d2g-6x-TZk"/>
+                            <constraint firstItem="ZCA-y6-Ttk" firstAttribute="top" secondItem="kG6-bt-Hk9" secondAttribute="bottom" constant="-14" id="gAR-kO-gNt"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="cup" destination="ZCA-y6-Ttk" id="c4e-pu-vID"/>
+                        <outlet property="lid" destination="kG6-bt-Hk9" id="F1Z-5C-p7l"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="116" y="122.78860569715144"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="MSRInfo_Main_Cup_01" width="122" height="166"/>
+        <image name="MSRInfo_Main_Cup_02" width="122" height="44"/>
+    </resources>
+</document>

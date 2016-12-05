@@ -1,0 +1,529 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6A7671071DF5394C00C0CCF5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A7671061DF5394C00C0CCF5 /* AppDelegate.swift */; };
+		6A7671091DF5394C00C0CCF5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A7671081DF5394C00C0CCF5 /* ViewController.swift */; };
+		6A76710C1DF5394C00C0CCF5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A76710A1DF5394C00C0CCF5 /* Main.storyboard */; };
+		6A76710E1DF5394C00C0CCF5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A76710D1DF5394C00C0CCF5 /* Assets.xcassets */; };
+		6A7671111DF5394C00C0CCF5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A76710F1DF5394C00C0CCF5 /* LaunchScreen.storyboard */; };
+		6A76711C1DF5394C00C0CCF5 /* starbucksAnimationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A76711B1DF5394C00C0CCF5 /* starbucksAnimationTests.swift */; };
+		6A7671271DF5394C00C0CCF5 /* starbucksAnimationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A7671261DF5394C00C0CCF5 /* starbucksAnimationUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6A7671181DF5394C00C0CCF5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6A7670FB1DF5394C00C0CCF5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6A7671021DF5394C00C0CCF5;
+			remoteInfo = starbucksAnimation;
+		};
+		6A7671231DF5394C00C0CCF5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6A7670FB1DF5394C00C0CCF5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6A7671021DF5394C00C0CCF5;
+			remoteInfo = starbucksAnimation;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6A7671031DF5394C00C0CCF5 /* starbucksAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = starbucksAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A7671061DF5394C00C0CCF5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6A7671081DF5394C00C0CCF5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6A76710B1DF5394C00C0CCF5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6A76710D1DF5394C00C0CCF5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6A7671101DF5394C00C0CCF5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6A7671121DF5394C00C0CCF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6A7671171DF5394C00C0CCF5 /* starbucksAnimationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = starbucksAnimationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A76711B1DF5394C00C0CCF5 /* starbucksAnimationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = starbucksAnimationTests.swift; sourceTree = "<group>"; };
+		6A76711D1DF5394C00C0CCF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6A7671221DF5394C00C0CCF5 /* starbucksAnimationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = starbucksAnimationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A7671261DF5394C00C0CCF5 /* starbucksAnimationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = starbucksAnimationUITests.swift; sourceTree = "<group>"; };
+		6A7671281DF5394C00C0CCF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6A7671001DF5394C00C0CCF5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A7671141DF5394C00C0CCF5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A76711F1DF5394C00C0CCF5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6A7670FA1DF5394C00C0CCF5 = {
+			isa = PBXGroup;
+			children = (
+				6A7671051DF5394C00C0CCF5 /* starbucksAnimation */,
+				6A76711A1DF5394C00C0CCF5 /* starbucksAnimationTests */,
+				6A7671251DF5394C00C0CCF5 /* starbucksAnimationUITests */,
+				6A7671041DF5394C00C0CCF5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6A7671041DF5394C00C0CCF5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6A7671031DF5394C00C0CCF5 /* starbucksAnimation.app */,
+				6A7671171DF5394C00C0CCF5 /* starbucksAnimationTests.xctest */,
+				6A7671221DF5394C00C0CCF5 /* starbucksAnimationUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6A7671051DF5394C00C0CCF5 /* starbucksAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				6A7671061DF5394C00C0CCF5 /* AppDelegate.swift */,
+				6A7671081DF5394C00C0CCF5 /* ViewController.swift */,
+				6A76710A1DF5394C00C0CCF5 /* Main.storyboard */,
+				6A76710D1DF5394C00C0CCF5 /* Assets.xcassets */,
+				6A76710F1DF5394C00C0CCF5 /* LaunchScreen.storyboard */,
+				6A7671121DF5394C00C0CCF5 /* Info.plist */,
+			);
+			path = starbucksAnimation;
+			sourceTree = "<group>";
+		};
+		6A76711A1DF5394C00C0CCF5 /* starbucksAnimationTests */ = {
+			isa = PBXGroup;
+			children = (
+				6A76711B1DF5394C00C0CCF5 /* starbucksAnimationTests.swift */,
+				6A76711D1DF5394C00C0CCF5 /* Info.plist */,
+			);
+			path = starbucksAnimationTests;
+			sourceTree = "<group>";
+		};
+		6A7671251DF5394C00C0CCF5 /* starbucksAnimationUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6A7671261DF5394C00C0CCF5 /* starbucksAnimationUITests.swift */,
+				6A7671281DF5394C00C0CCF5 /* Info.plist */,
+			);
+			path = starbucksAnimationUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6A7671021DF5394C00C0CCF5 /* starbucksAnimation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6A76712B1DF5394C00C0CCF5 /* Build configuration list for PBXNativeTarget "starbucksAnimation" */;
+			buildPhases = (
+				6A7670FF1DF5394C00C0CCF5 /* Sources */,
+				6A7671001DF5394C00C0CCF5 /* Frameworks */,
+				6A7671011DF5394C00C0CCF5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = starbucksAnimation;
+			productName = starbucksAnimation;
+			productReference = 6A7671031DF5394C00C0CCF5 /* starbucksAnimation.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6A7671161DF5394C00C0CCF5 /* starbucksAnimationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6A76712E1DF5394C00C0CCF5 /* Build configuration list for PBXNativeTarget "starbucksAnimationTests" */;
+			buildPhases = (
+				6A7671131DF5394C00C0CCF5 /* Sources */,
+				6A7671141DF5394C00C0CCF5 /* Frameworks */,
+				6A7671151DF5394C00C0CCF5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6A7671191DF5394C00C0CCF5 /* PBXTargetDependency */,
+			);
+			name = starbucksAnimationTests;
+			productName = starbucksAnimationTests;
+			productReference = 6A7671171DF5394C00C0CCF5 /* starbucksAnimationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6A7671211DF5394C00C0CCF5 /* starbucksAnimationUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6A7671311DF5394C00C0CCF5 /* Build configuration list for PBXNativeTarget "starbucksAnimationUITests" */;
+			buildPhases = (
+				6A76711E1DF5394C00C0CCF5 /* Sources */,
+				6A76711F1DF5394C00C0CCF5 /* Frameworks */,
+				6A7671201DF5394C00C0CCF5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6A7671241DF5394C00C0CCF5 /* PBXTargetDependency */,
+			);
+			name = starbucksAnimationUITests;
+			productName = starbucksAnimationUITests;
+			productReference = 6A7671221DF5394C00C0CCF5 /* starbucksAnimationUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6A7670FB1DF5394C00C0CCF5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = iOSDev;
+				TargetAttributes = {
+					6A7671021DF5394C00C0CCF5 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 3SHCEW3Z3H;
+						ProvisioningStyle = Automatic;
+					};
+					6A7671161DF5394C00C0CCF5 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 6A7671021DF5394C00C0CCF5;
+					};
+					6A7671211DF5394C00C0CCF5 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 6A7671021DF5394C00C0CCF5;
+					};
+				};
+			};
+			buildConfigurationList = 6A7670FE1DF5394C00C0CCF5 /* Build configuration list for PBXProject "starbucksAnimation" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6A7670FA1DF5394C00C0CCF5;
+			productRefGroup = 6A7671041DF5394C00C0CCF5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6A7671021DF5394C00C0CCF5 /* starbucksAnimation */,
+				6A7671161DF5394C00C0CCF5 /* starbucksAnimationTests */,
+				6A7671211DF5394C00C0CCF5 /* starbucksAnimationUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6A7671011DF5394C00C0CCF5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A7671111DF5394C00C0CCF5 /* LaunchScreen.storyboard in Resources */,
+				6A76710E1DF5394C00C0CCF5 /* Assets.xcassets in Resources */,
+				6A76710C1DF5394C00C0CCF5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A7671151DF5394C00C0CCF5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A7671201DF5394C00C0CCF5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6A7670FF1DF5394C00C0CCF5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A7671091DF5394C00C0CCF5 /* ViewController.swift in Sources */,
+				6A7671071DF5394C00C0CCF5 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A7671131DF5394C00C0CCF5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A76711C1DF5394C00C0CCF5 /* starbucksAnimationTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A76711E1DF5394C00C0CCF5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A7671271DF5394C00C0CCF5 /* starbucksAnimationUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6A7671191DF5394C00C0CCF5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6A7671021DF5394C00C0CCF5 /* starbucksAnimation */;
+			targetProxy = 6A7671181DF5394C00C0CCF5 /* PBXContainerItemProxy */;
+		};
+		6A7671241DF5394C00C0CCF5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6A7671021DF5394C00C0CCF5 /* starbucksAnimation */;
+			targetProxy = 6A7671231DF5394C00C0CCF5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6A76710A1DF5394C00C0CCF5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6A76710B1DF5394C00C0CCF5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6A76710F1DF5394C00C0CCF5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6A7671101DF5394C00C0CCF5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6A7671291DF5394C00C0CCF5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6A76712A1DF5394C00C0CCF5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6A76712C1DF5394C00C0CCF5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3SHCEW3Z3H;
+				INFOPLIST_FILE = starbucksAnimation/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.eddieyip.starbucksAnimation;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		6A76712D1DF5394C00C0CCF5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3SHCEW3Z3H;
+				INFOPLIST_FILE = starbucksAnimation/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.eddieyip.starbucksAnimation;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		6A76712F1DF5394C00C0CCF5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = starbucksAnimationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.eddieyip.starbucksAnimationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/starbucksAnimation.app/starbucksAnimation";
+			};
+			name = Debug;
+		};
+		6A7671301DF5394C00C0CCF5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = starbucksAnimationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.eddieyip.starbucksAnimationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/starbucksAnimation.app/starbucksAnimation";
+			};
+			name = Release;
+		};
+		6A7671321DF5394C00C0CCF5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = starbucksAnimationUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.eddieyip.starbucksAnimationUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = starbucksAnimation;
+			};
+			name = Debug;
+		};
+		6A7671331DF5394C00C0CCF5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = starbucksAnimationUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.eddieyip.starbucksAnimationUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = starbucksAnimation;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6A7670FE1DF5394C00C0CCF5 /* Build configuration list for PBXProject "starbucksAnimation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A7671291DF5394C00C0CCF5 /* Debug */,
+				6A76712A1DF5394C00C0CCF5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6A76712B1DF5394C00C0CCF5 /* Build configuration list for PBXNativeTarget "starbucksAnimation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A76712C1DF5394C00C0CCF5 /* Debug */,
+				6A76712D1DF5394C00C0CCF5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		6A76712E1DF5394C00C0CCF5 /* Build configuration list for PBXNativeTarget "starbucksAnimationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A76712F1DF5394C00C0CCF5 /* Debug */,
+				6A7671301DF5394C00C0CCF5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		6A7671311DF5394C00C0CCF5 /* Build configuration list for PBXNativeTarget "starbucksAnimationUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A7671321DF5394C00C0CCF5 /* Debug */,
+				6A7671331DF5394C00C0CCF5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6A7670FB1DF5394C00C0CCF5 /* Project object */;
+}
