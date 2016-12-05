@@ -12,14 +12,17 @@ import CoreMotion
 class ViewController: UIViewController, UICollisionBehaviorDelegate {
     @IBOutlet weak var lid: UIImageView!
     @IBOutlet weak var cup: UIImageView!
-    let starNum = 4
+    let starNum = 5
     var animator:UIDynamicAnimator!
     lazy var motionManager = CMMotionManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
         let dynamicItems = createStars()
         self.animator = UIDynamicAnimator(referenceView: self.cup)
         
@@ -50,11 +53,11 @@ class ViewController: UIViewController, UICollisionBehaviorDelegate {
         self.animator.addBehavior(collisionRight)
         self.animator.addBehavior(collisionBottom)
         self.animator.addBehavior(behavior)
-
+        
         motionManager.startDeviceMotionUpdates(to: OperationQueue.main) { (motion, err) in
             let rotation = atan2(motion!.gravity.x, motion!.gravity.y) - (M_PI/2)
             guard abs(rotation) > 0.8 else { return }
-            gravity.setAngle(CGFloat(rotation), magnitude: 0.1)
+                        gravity.setAngle(CGFloat(rotation), magnitude: 0.1)
         }
     }
 
@@ -62,10 +65,8 @@ class ViewController: UIViewController, UICollisionBehaviorDelegate {
         var animationObjects = [UIView]()
         for _ in 0..<starNum {
             let star = Star(image: UIImage(named:"MSRInfo_Main_star_01")!)
-            let x = CGFloat(arc4random_uniform(50) + 10)
+            let x = CGFloat(arc4random_uniform(30) + 10)
             star.frame = CGRect(x: x, y: 0, width: 24, height: 24)
-            star.layer.masksToBounds = true
-            star.layer.cornerRadius = 12
             self.cup.addSubview(star)
             animationObjects.append(star)
         }
@@ -80,7 +81,7 @@ class ViewController: UIViewController, UICollisionBehaviorDelegate {
 
 class Star: UIImageView {
     override var collisionBoundsType: UIDynamicItemCollisionBoundsType {
-        return .path
+        return .ellipse
     }
 }
 
