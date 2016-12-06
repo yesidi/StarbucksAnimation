@@ -12,17 +12,17 @@ import CoreMotion
 class ViewController: UIViewController, UICollisionBehaviorDelegate {
     @IBOutlet weak var lid: UIImageView!
     @IBOutlet weak var cup: UIImageView!
-    let starNum = 5
+    let starNum = 3
     var animator:UIDynamicAnimator!
     lazy var motionManager = CMMotionManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        self.createAnimation()
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
+    func createAnimation() {
         let dynamicItems = createStars()
         self.animator = UIDynamicAnimator(referenceView: self.cup)
         
@@ -36,8 +36,8 @@ class ViewController: UIViewController, UICollisionBehaviorDelegate {
         let pLeftTop = CGPoint(x: 6, y: 0)
         let pRightTop = CGPoint(x: 116, y: 0)
         
-        let pLeftBottom = CGPoint(x: 22, y: 165)
-        let pRightBottom = CGPoint(x: 100, y: 165)
+        let pLeftBottom = CGPoint(x: 22, y: 163)
+        let pRightBottom = CGPoint(x: 100, y: 163)
         
         collisionTop.addBoundary(withIdentifier: "boundaryTop" as NSCopying, from: pLeftTop, to: pRightTop)
         collisionLeft.addBoundary(withIdentifier: "boundaryLeft" as NSCopying, from: pLeftTop, to: pLeftBottom)
@@ -57,7 +57,7 @@ class ViewController: UIViewController, UICollisionBehaviorDelegate {
         motionManager.startDeviceMotionUpdates(to: OperationQueue.main) { (motion, err) in
             let rotation = atan2(motion!.gravity.x, motion!.gravity.y) - (M_PI/2)
             guard abs(rotation) > 0.8 else { return }
-                        gravity.setAngle(CGFloat(rotation), magnitude: 0.1)
+            gravity.setAngle(CGFloat(rotation), magnitude: 0.1)
         }
     }
 
@@ -65,8 +65,8 @@ class ViewController: UIViewController, UICollisionBehaviorDelegate {
         var animationObjects = [UIView]()
         for _ in 0..<starNum {
             let star = Star(image: UIImage(named:"MSRInfo_Main_star_01")!)
-            let x = CGFloat(arc4random_uniform(30) + 10)
-            star.frame = CGRect(x: x, y: 0, width: 24, height: 24)
+            let x = CGFloat(arc4random_uniform(30) + 20)
+            star.frame = CGRect(x: x, y: 30, width: 24, height: 24)
             self.cup.addSubview(star)
             animationObjects.append(star)
         }
