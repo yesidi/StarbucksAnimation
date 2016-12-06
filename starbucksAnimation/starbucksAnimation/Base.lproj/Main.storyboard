@@ -36,7 +36,7 @@
                                 </constraints>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AppIcon60x60" translatesAutoresizingMaskIntoConstraints="NO" id="Y8a-ln-FDi" customClass="app">
-                                <rect key="frame" x="157" y="137" width="60" height="60"/>
+                                <rect key="frame" x="157" y="170" width="60" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="60" id="9e1-7Q-V6M"/>
                                     <constraint firstAttribute="height" constant="60" id="ojU-9H-Kr7"/>
@@ -48,8 +48,22 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dqr-72-uip">
+                                <rect key="frame" x="112" y="540.5" width="150" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="6eS-uf-w1Q"/>
+                                    <constraint firstAttribute="height" constant="30" id="WPc-cE-BHX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <state key="normal" title="Restart">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="restart:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8Wj-Pb-Pm2"/>
+                                </connections>
+                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Starbucks Animation" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xFK-dF-B82">
-                                <rect key="frame" x="48" y="213" width="279" height="44"/>
+                                <rect key="frame" x="48" y="78" width="279" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="GhZ-1T-eVJ"/>
                                     <constraint firstAttribute="width" constant="279" id="caB-9V-B2H"/>
@@ -62,18 +76,21 @@
                         <color key="backgroundColor" red="0.0" green="0.44712471961975098" blue="0.29815232753753662" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="xFK-dF-B82" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6dB-43-Nae"/>
+                            <constraint firstItem="dqr-72-uip" firstAttribute="top" secondItem="ZCA-y6-Ttk" secondAttribute="bottom" constant="24" id="6uU-hW-ILs"/>
                             <constraint firstItem="ZCA-y6-Ttk" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="1.3" id="8de-hs-ERd"/>
-                            <constraint firstItem="xFK-dF-B82" firstAttribute="top" secondItem="Y8a-ln-FDi" secondAttribute="bottom" constant="16" id="ABs-K9-Ppe"/>
+                            <constraint firstItem="dqr-72-uip" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Pwc-eV-Hzt"/>
                             <constraint firstItem="kG6-bt-Hk9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ryk-dN-4Jg"/>
+                            <constraint firstItem="xFK-dF-B82" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="0.3" id="ZXR-Eb-0pJ"/>
                             <constraint firstItem="ZCA-y6-Ttk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="d2g-6x-TZk"/>
                             <constraint firstItem="ZCA-y6-Ttk" firstAttribute="top" secondItem="kG6-bt-Hk9" secondAttribute="bottom" constant="-14" id="gAR-kO-gNt"/>
-                            <constraint firstItem="Y8a-ln-FDi" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="0.5" id="n57-05-3Vd"/>
+                            <constraint firstItem="Y8a-ln-FDi" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="0.6" id="n57-05-3Vd"/>
                             <constraint firstItem="Y8a-ln-FDi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zR7-F4-h2F"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="cup" destination="ZCA-y6-Ttk" id="c4e-pu-vID"/>
                         <outlet property="lid" destination="kG6-bt-Hk9" id="F1Z-5C-p7l"/>
+                        <outlet property="restartBtn" destination="dqr-72-uip" id="KgC-Qu-Tgj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
