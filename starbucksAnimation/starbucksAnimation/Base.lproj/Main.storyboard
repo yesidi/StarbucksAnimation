@@ -4,8 +4,8 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -22,26 +22,53 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MSRInfo_Main_Cup_02" translatesAutoresizingMaskIntoConstraints="NO" id="kG6-bt-Hk9">
-                                <rect key="frame" x="126" y="220" width="122" height="44"/>
+                                <rect key="frame" x="126" y="320" width="122" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="122" id="JhH-OO-3HH"/>
                                     <constraint firstAttribute="height" constant="44" id="Z2p-Bj-5aU"/>
                                 </constraints>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MSRInfo_Main_Cup_01" translatesAutoresizingMaskIntoConstraints="NO" id="ZCA-y6-Ttk">
-                                <rect key="frame" x="126" y="250.5" width="122" height="166"/>
+                                <rect key="frame" x="126" y="350.5" width="122" height="166"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="122" id="8mW-7p-3ym"/>
                                     <constraint firstAttribute="height" constant="166" id="dr6-Ya-Ru6"/>
                                 </constraints>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AppIcon60x60" translatesAutoresizingMaskIntoConstraints="NO" id="Y8a-ln-FDi" customClass="app">
+                                <rect key="frame" x="157" y="137" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="9e1-7Q-V6M"/>
+                                    <constraint firstAttribute="height" constant="60" id="ojU-9H-Kr7"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Starbucks Animation" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xFK-dF-B82">
+                                <rect key="frame" x="48" y="213" width="279" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="GhZ-1T-eVJ"/>
+                                    <constraint firstAttribute="width" constant="279" id="caB-9V-B2H"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.44712471961975098" blue="0.29815232753753662" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="ZCA-y6-Ttk" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="8de-hs-ERd"/>
+                            <constraint firstItem="xFK-dF-B82" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6dB-43-Nae"/>
+                            <constraint firstItem="ZCA-y6-Ttk" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="1.3" id="8de-hs-ERd"/>
+                            <constraint firstItem="xFK-dF-B82" firstAttribute="top" secondItem="Y8a-ln-FDi" secondAttribute="bottom" constant="16" id="ABs-K9-Ppe"/>
                             <constraint firstItem="kG6-bt-Hk9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ryk-dN-4Jg"/>
                             <constraint firstItem="ZCA-y6-Ttk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="d2g-6x-TZk"/>
                             <constraint firstItem="ZCA-y6-Ttk" firstAttribute="top" secondItem="kG6-bt-Hk9" secondAttribute="bottom" constant="-14" id="gAR-kO-gNt"/>
+                            <constraint firstItem="Y8a-ln-FDi" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="0.5" id="n57-05-3Vd"/>
+                            <constraint firstItem="Y8a-ln-FDi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zR7-F4-h2F"/>
                         </constraints>
                     </view>
                     <connections>
@@ -55,6 +82,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="AppIcon60x60" width="60" height="60"/>
         <image name="MSRInfo_Main_Cup_01" width="122" height="166"/>
         <image name="MSRInfo_Main_Cup_02" width="122" height="44"/>
     </resources>
