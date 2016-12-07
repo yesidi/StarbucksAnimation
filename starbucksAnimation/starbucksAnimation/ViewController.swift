@@ -71,7 +71,7 @@ class ViewController: UIViewController, UICollisionBehaviorDelegate {
                 self.lid.transform = CGAffineTransform.identity
             }, completion: { (finished) in
                 self.lid.layer.anchorPoint = CGPoint(x: 0.5, y: 0.5)
-                self.lid.layer.position = CGPoint(x: 160, y: 278)
+                self.lid.layer.position = self.lid.center
             })
             return
         }
